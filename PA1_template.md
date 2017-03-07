@@ -145,7 +145,7 @@ Steps per Interval:
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
-Interval at **08:35** contains 104 steps
+Interval at **08:35** contains 206 steps on average.
 
     
 ## Imputing missing values

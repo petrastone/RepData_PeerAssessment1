@@ -100,7 +100,7 @@ Steps per Interval:
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
-Interval at **`r strftime( strptime( paste(Sys.Date(), sprintf('%04d', mostActiveInterval)), format="%Y-%m-%d %H%M" ), '%H:%M' )`** contains `r which.max(stepsPerInterval$meanStepsPerInterval)` steps
+Interval at **`r strftime( strptime( paste(Sys.Date(), sprintf('%04d', mostActiveInterval)), format="%Y-%m-%d %H%M" ), '%H:%M' )`** contains `r round(stepsPerInterval[which.max(stepsPerInterval$meanStepsPerInterval),]$meanStepsPerInterval)` steps on average.
 
     
 ## Imputing missing values
